@@ -54,3 +54,86 @@ if age < 18:
     print("Du bist minderjährig")
 
 #Python Tuto #11 Elif und Else Zweige
+if age < 18:
+    print(16)
+elif age == 18:
+    print(18)
+else:
+    print(20)
+
+#Python Tuto #12 Logische Operatoren
+if (age == 18) and (example == 22):
+    print(18, 22)
+
+#Python Tuto #13 While-Schleife
+while 0 < 10:
+    print("0 ist immer kleiner als 10")
+
+#Python Tuto #14 Einführung Listen
+nummern = [3, 5, 15, 17, 20]
+nichtNurNummern = [3, 5, 15, 17, 20, "Andy"]
+
+#Python Tuto #15 Zugriff auf Listen
+nichtNurNummern2 = [3, 5, 15, 17, 20, "Andy"]
+print(nichtNurNummern2[0])
+
+#Python Tuto #16 For-Schleife
+for element in nichtNurNummern:
+    print(element)
+
+#Python Tuto #17 For-Schleife als Zählerschleife
+for element in range(1, 10, 2): #Start- und Endwert und Schrittweite
+    print(element)
+
+#Python Tuto #18 Funktionen
+def say_hello():
+    print("Hallo")
+say_hello()
+
+#Python Tuto #19 Funktionen mir Para
+def say_hello2(name):
+    print("Hallo " + name)
+say_hello2("Andy")
+
+#Python Tuto #20 Funktionen mit Rückgabe
+def maximum(a, b):
+    if a < b:
+        return b
+    else:
+        return a
+zahl = maximum(3, 7)
+print(zahl)
+
+#Python Tuto #21 Objektorientierung (Konzept)
+#OOP: Darstellung von Daten (Welt besteht aus komplexen Objekten)
+#Eigene Datentypen erstellen
+
+#Python Tuto #22 Klassen und Objekten
+class Car:
+    def __init__(self):
+        self.hersteller = ""
+        self.ps = 0
+        self.farbe = ""
+car1 = Car()
+car1.hersteller = "BMW"
+
+#Python Tuto #23 Self Parameter
+#Referenz auf ein Objekt => Self überliefert die Referenz de ausführenden Objekt
+
+#Python Tuto #24 Methoden in Klassen
+class Car2:
+    def __init__(self):
+        self.hersteller = ""
+        self.ps = 0
+        self.farbe = ""
+        self.x_pos = 5
+        self.y_pos = 5
+
+    def drive(self, x, y):
+        self.x_pos += x
+        self.y_pos += y
+car2 = Car2
+car2.drive(5, 5)
+
+
+
